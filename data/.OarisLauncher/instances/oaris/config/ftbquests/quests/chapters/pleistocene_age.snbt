@@ -1,0 +1,186 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "pleistocene_age"
+	group: "4AAD00DF5B6AB90F"
+	hide_quest_until_deps_complete: true
+	icon: "unearthed_journey:pleistocene_portal_corner"
+	id: "4BB0119C3749026D"
+	images: [{
+		height: 20.0d
+		image: "minecraft:textures/gui/quests/image_pleistocene.png"
+		rotation: 0.0d
+		width: 35.0d
+		x: 4.0d
+		y: -3.0d
+	}]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["09BC0E6631FF2657"]
+			description: [
+				"The Pleistocene Age started 2.2 million years ago and ended just about 10,000 years ago! It led to huge changes in climate and weather. Pretty"
+				"crazy!"
+			]
+			id: "28236117632D7675"
+			rewards: [{
+				id: "26DC8D3A16B5B316"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "Enter the pleistocene age ..."
+			tasks: [{
+				dimension: "unearthed_journey:pleistocene"
+				icon: "unearthed_journey:pleistocene_portal_corner"
+				id: "600EF4B631290524"
+				title: "Enter the pleistocene age"
+				type: "dimension"
+			}]
+			title: "&3&lThe Pleistocene Age"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["28236117632D7675"]
+			description: ["Well, congrats on completing that quest, right?"]
+			id: "192BE722B6943551"
+			rewards: [{
+				id: "085BAF9D8BF3181B"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			subtitle: "Explore the pleistocene environment!"
+			tasks: [{
+				biome: "unearthed_journey:santa_fe_river_formation"
+				id: "1305B61B3048489A"
+				title: "Visit the Santa Fe river formation"
+				type: "biome"
+			}]
+			title: "&3&lThe Pleistocene Environment"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["28236117632D7675"]
+			description: ["Manganese steel is a superior resource that can be used to craft all types of equipment."]
+			id: "68C2486B2F0B720B"
+			rewards: [{
+				id: "04C4FB33591B1FB3"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			subtitle: "Manganese steel really is the real steel deal."
+			tasks: [{
+				id: "2FB81043BE744672"
+				item: "unearthed_journey:manganese_steel_ingot"
+				type: "item"
+			}]
+			title: "&3&lThe Real Steel"
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["68C2486B2F0B720B"]
+			description: ["Manganese steel equipment is quite strong, so you better get one if you want to face all of the challenges of the pleistocene age!"]
+			id: "1B3DEF24BBEE442B"
+			min_required_tasks: 1
+			rewards: [
+				{
+					id: "743ABFEC5AAC4546"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "612F6FBCCF6B6122"
+					table_id: 1365136238275176325L
+					type: "random"
+				}
+			]
+			subtitle: "Obtain a piece of manganese steel equipment."
+			tasks: [
+				{
+					id: "6A0A00595B3A114A"
+					item: {
+						Count: 1
+						id: "unearthed_journey:padded_armor_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1DD9D94A709ECC28"
+					item: {
+						Count: 1
+						id: "unearthed_journey:padded_armor_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "73670E0CD060B2A0"
+					item: {
+						Count: 1
+						id: "unearthed_journey:padded_armor_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "233F611D34354513"
+					item: {
+						Count: 1
+						id: "unearthed_journey:padded_armor_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&3&lSuperior Protection! Yay!"
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["28236117632D7675"]
+			description: ["These nasty foes have stayed the same for literal thousands of years. Well, you have to kill one, so sucks to be you I guess!"]
+			id: "5AB96AE9E5440131"
+			rewards: [
+				{
+					id: "6A237529A933816D"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "65FC7A71305202F4"
+					table_id: 7770373541787713970L
+					type: "random"
+				}
+			]
+			subtitle: "Alligators. They suck."
+			tasks: [{
+				entity: "unearthed_journey:alligator_mississippiensis"
+				icon: "unearthed_journey:raw_meat"
+				id: "21CB7D0167BB9C75"
+				title: "Slay an alligator"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&3&lSee You Later (Not)"
+			x: 3.0d
+			y: -3.5d
+		}
+	]
+	title: "&b Pleistocene Age"
+}

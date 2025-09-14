@@ -1,0 +1,478 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "paleogene_age"
+	group: "4AAD00DF5B6AB90F"
+	hide_quest_until_deps_complete: true
+	icon: "unearthed_journey:paleogene_portal_corner"
+	id: "43F771D0BF15613B"
+	images: [{
+		height: 20.0d
+		image: "minecraft:textures/gui/quests/image_paleogene.png"
+		rotation: 0.0d
+		width: 35.0d
+		x: 0.5d
+		y: 0.5d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["09BC0E6631FF2657"]
+			description: ["The paleogene age was the first of the cenozoic eras. It started around 66 million years ago and ended around 23 million years ago."]
+			id: "396BE664A2EDA606"
+			rewards: [
+				{
+					id: "01242659177D132B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "07AA51DA6F7CC861"
+					table_id: 1365136238275176325L
+					type: "random"
+				}
+			]
+			shape: "octagon"
+			size: 1.6d
+			subtitle: "Enter the paleogene age!"
+			tasks: [{
+				dimension: "unearthed_journey:paleogene"
+				icon: "unearthed_journey:paleogene_portal_corner"
+				id: "0CED1BD181C76D0E"
+				title: "Enter the paleogene age"
+				type: "dimension"
+			}]
+			title: "&3&lThe Paleogene Age"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["396BE664A2EDA606"]
+			description: ["The paleogene age has a couple of different biomes for you to explore. Can you find them all?"]
+			id: "4E9BE5044E0C78FD"
+			rewards: [
+				{
+					id: "1C5048D5BF480165"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5F86F1EF43FF29CA"
+					table_id: 7770373541787713970L
+					type: "random"
+				}
+			]
+			subtitle: "Explore the paleogene environments!"
+			tasks: [
+				{
+					biome: "unearthed_journey:cerrejon_formation"
+					id: "6051295F0BA6A444"
+					title: "Visit the cerrejon formation"
+					type: "biome"
+				}
+				{
+					biome: "unearthed_journey:messel_pit"
+					id: "5E75AD9FD65EEBF2"
+					title: "Visit the messel pit"
+					type: "biome"
+				}
+			]
+			title: "&3&lPaleogene Environments"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["396BE664A2EDA606"]
+			description: ["Long ago, snakes grew much larger and they were deadly unlike anything ever seen. And that's the Titanoboa. Good luck, have fun I guess?"]
+			icon: "iceandfire:sea_serpent_scales_green"
+			id: "0A38D9EA6D7F1191"
+			min_required_tasks: 1
+			rewards: [
+				{
+					id: "4314E0C4AF48E304"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "303504555EBD8A65"
+					table_id: 1365136238275176325L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5F27AE0FB62AD687"
+					table_id: 7770373541787713970L
+					type: "random"
+				}
+			]
+			shape: "diamond"
+			size: 1.2d
+			subtitle: "The ancient queen of snakes is waiting for you. Can you defeat her?"
+			tasks: [
+				{
+					entity: "unearthed_journey:titanoboa_body_1"
+					icon: "iceandfire:sea_serpent_scales_green"
+					id: "285444FC73C343EC"
+					secret: true
+					title: "Kill the titanoboa"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "unearthed_journey:titanoboa_body_2"
+					icon: "iceandfire:sea_serpent_scales_green"
+					id: "6354AA0C46ACB427"
+					secret: true
+					title: "Kill the titanoboa"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "unearthed_journey:titanoboa_head"
+					icon: "iceandfire:sea_serpent_scales_green"
+					id: "5683488CB1D55D92"
+					secret: true
+					title: "Kill the titanoboa"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "unearthed_journey:titanoboa_neck"
+					icon: "iceandfire:sea_serpent_scales_green"
+					id: "7130591658004A63"
+					secret: true
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "unearthed_journey:titanoboa_neck_2"
+					icon: "iceandfire:sea_serpent_scales_green"
+					id: "714031BA43EC1A64"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "unearthed_journey:titanoboa_neck_3"
+					icon: "iceandfire:sea_serpent_scales_green"
+					id: "5364A62C25268473"
+					secret: true
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "unearthed_journey:titanoboa_tail_1"
+					icon: "iceandfire:sea_serpent_scales_green"
+					id: "683352A84B193425"
+					secret: true
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "unearthed_journey:titanoboa_tail_2"
+					icon: "iceandfire:sea_serpent_scales_green"
+					id: "172E7E27A41C35F5"
+					secret: true
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "&3&lThe Queen Of Snakes"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["396BE664A2EDA606"]
+			description: ["Carbonemys are strange, ancient turtle-like reptiles. They are neutral, so they will fight back if you provoke them."]
+			id: "344C455083C5568A"
+			rewards: [{
+				id: "0731D346878F5118"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			subtitle: "Strange creatures indeed."
+			tasks: [{
+				entity: "unearthed_journey:carbonemys"
+				icon: "unearthed_journey:thick_scute"
+				id: "06751D34FB654D83"
+				title: "Kill a carbonemys"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&3&lCarbon What Now?"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["344C455083C5568A"]
+			description: ["Thick scutes can be used to craft a special shield. Can you obtain them? Well, on with it then!"]
+			id: "24F49C8EC7B50298"
+			rewards: [{
+				id: "43C9F8415A99BB12"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			subtitle: "Obtain thick scutes from a carbonemys."
+			tasks: [{
+				icon: "upgrade_aquatic:scute_block"
+				id: "18BEF7801C1EF46A"
+				item: "unearthed_journey:thick_scute"
+				title: "Obtain thick scutes"
+				type: "item"
+			}]
+			title: "&3&lThick Scutes"
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["24F49C8EC7B50298"]
+			description: ["Scute shields are really cool, ancient shields. They're perfect for adventurers like yourself!"]
+			id: "520E87BD4B4A0FDB"
+			rewards: [
+				{
+					id: "35D5B8E3677F171A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "16D036E3B790EF3D"
+					table_id: 1365136238275176325L
+					type: "random"
+				}
+			]
+			subtitle: "Craft a scute shield with thick scutes."
+			tasks: [{
+				id: "317BBE00541D920C"
+				item: {
+					Count: 1
+					id: "unearthed_journey:scute_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&3&lCan't Hurt Me!"
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["396BE664A2EDA606"]
+			description: ["Apparently, this old creatures like clams. Perhaps you can tame one if you manage to do it right."]
+			id: "6ACEC3201B16A97D"
+			rewards: [
+				{
+					id: "3EF216E8A7E36245"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0ED92B9B9119D3F0"
+					table_id: 7770373541787713970L
+					type: "random"
+				}
+			]
+			subtitle: "Tame a carbonemys with clams."
+			tasks: [{
+				checkItem: true
+				entity: "unearthed_journey:carbonemys"
+				icon: "unearthed_journey:clams_block"
+				id: "03AE5197414CC243"
+				item: "unearthed_journey:clams_block"
+				nbt: { }
+				title: "Tame a carbonemys with clams"
+				type: "questsadditions:interaction"
+				value: 1L
+			}]
+			title: "&3&lClam Eaters!"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6ACEC3201B16A97D"]
+			description: ["Your carbonemys can be equipped with a satchel. That's awesome, don't you think?"]
+			id: "331DB1D98172C452"
+			rewards: [
+				{
+					id: "0DB5A151842625CC"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6D314247CE8FCC76"
+					table_id: 1365136238275176325L
+					type: "random"
+				}
+			]
+			subtitle: "Equip a carbonemys with a satchel."
+			tasks: [{
+				checkItem: true
+				entity: "unearthed_journey:carbonemys"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 18
+						}
+					}
+					id: "unearthed_journey:hide_satchel"
+					tag: {
+						Inventory: {
+							Items: [ ]
+							Size: 18
+						}
+					}
+				}
+				id: "7108B8C0007CAC2E"
+				item: "unearthed_journey:hide_satchel"
+				nbt: { }
+				title: "Equip a carbonemys with a satchel"
+				type: "questsadditions:interaction"
+				value: 1L
+			}]
+			title: "&3&lCarry My Stuff!"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["396BE664A2EDA606"]
+			description: ["I wonder if you can make some nice fried eggs with these prehistoric ... eggs."]
+			id: "194334147956143C"
+			rewards: [{
+				id: "56B72D9CB3496466"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			subtitle: "Anhimas, strange prehistoric birds, can sometimes lay eggs."
+			tasks: [{
+				id: "3A31F4DCDDEE8467"
+				item: "unearthed_journey:anhima_egg"
+				title: "Obtain an anhima egg"
+				type: "item"
+			}]
+			title: "&3&lFried Eggs Of The Past"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["194334147956143C"]
+			description: ["The anhima can drop their feathers upon death. Keep them, they will be useful for a special recipe ..."]
+			id: "595B28DFCE250C4C"
+			rewards: [{
+				id: "60A63F0C8772ECFD"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			subtitle: "Sooooo soft ..."
+			tasks: [{
+				id: "73EE0506E5B67AD5"
+				item: "unearthed_journey:down"
+				type: "item"
+			}]
+			title: "&3&lElegance!"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["595B28DFCE250C4C"]
+			description: ["Blowguns are useful little weapons, though not particularly powerful or deadly. You can craft their ammunition with anhima feathers."]
+			id: "50425CF4665F6CCA"
+			rewards: [
+				{
+					id: "5CAEE851D29EF8EE"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5662FE940E90ED5B"
+					table_id: 1365136238275176325L
+					type: "random"
+				}
+				{
+					count: 32
+					id: "5837CB531EC5DD4C"
+					item: "unearthed_journey:blow_dart"
+					type: "item"
+				}
+			]
+			subtitle: "The almighty, fierce, dangerous, deadly ... blowgun."
+			tasks: [
+				{
+					id: "7945E7D9971DFEAE"
+					item: "unearthed_journey:blow_dart"
+					type: "item"
+				}
+				{
+					id: "745C9AAE8E2F7D5F"
+					item: {
+						Count: 1
+						id: "unearthed_journey:mangaris_blowgun"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&3&lMighty Weapon"
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["396BE664A2EDA606"]
+			description: [
+				"A pouch of seeds is not only useful for carrying seeds, it's also required to make friends in the paleogene age. Without it, you're gonna have"
+				"to be lonely. :("
+			]
+			id: "563A2925FDFE2606"
+			rewards: [{
+				id: "07CD7AC8A11B7718"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			subtitle: "Obtain a pouch of seeds."
+			tasks: [{
+				id: "614AA90F30F509EE"
+				item: "unearthed_journey:pouch_of_seeds"
+				type: "item"
+			}]
+			title: "&3&lHow To Carry Seeds"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["563A2925FDFE2606"]
+			description: ["Lepticidiums can be tamed by interaction with them with a pouch of seeds. Go ahead, try it!"]
+			id: "231A0359D316E424"
+			rewards: [{
+				id: "18EC45066A789B1E"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			subtitle: "Make friends in the paleogene age!"
+			tasks: [{
+				checkItem: true
+				entity: "oddorganisms:leptictidium"
+				icon: "unearthed_journey:pelt"
+				id: "15354ABFC295B940"
+				item: "unearthed_journey:pouch_of_seeds"
+				nbt: { }
+				title: "Tame a lepticidium by giving it a pouch of seeds"
+				type: "questsadditions:interaction"
+				value: 1L
+			}]
+			title: "&3&lAncient Friends!"
+			x: -3.5d
+			y: -0.5d
+		}
+	]
+	title: "&b Paleogene Age"
+}

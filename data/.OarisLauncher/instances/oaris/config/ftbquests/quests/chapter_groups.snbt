@@ -1,0 +1,8 @@
+{
+	chapter_groups: [
+		{ id: "058D9728B3A05403", title: "&7&l &n« Introduction »&r        " }
+		{ id: "6618FCDEE108C471", title: "&c&l &n« Age of Weapons »&r " }
+		{ id: "783C51F687983915", title: "&2&l &n« Unusual Prehistory »&r" }
+		{ id: "4AAD00DF5B6AB90F", title: "&3&l&n « The Unearthed Journey »" }
+	]
+}

@@ -1,0 +1,204 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "introduction"
+	group: "4AAD00DF5B6AB90F"
+	hide_quest_until_deps_complete: true
+	icon: "unearthed_journey:archstone_pillar"
+	id: "7F4F5D623EB62C1D"
+	images: [{
+		height: 20.0d
+		image: "minecraft:textures/gui/quests/image_general.png"
+		rotation: 0.0d
+		width: 35.0d
+		x: 4.0d
+		y: -4.5d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["09BC0E6631FF2657"]
+			description: [
+				"To start your time travel adventures, you might just want to craft &3Nature's Compass.&r You will have to locate a temple far,"
+				"far from your spawn, and without a compass, that's not going to be particularly fun."
+			]
+			id: "7B42609AC3937087"
+			rewards: [{
+				id: "5613132453ABB018"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "You might want to craft a Nature's Compass to find the ancient temple ..."
+			tasks: [{
+				id: "3C478BA972E12005"
+				item: {
+					Count: 1
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "&3&lNature's Compass"
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7B42609AC3937087"]
+			description: ["Only in the jungle, you might find the ancient temple of Methuselah. You might have to look through multiple jungles, the temple is quite far away ..."]
+			id: "6595D4D901F98841"
+			min_required_tasks: 1
+			rewards: [{
+				id: "20EB755606604E0F"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			subtitle: "Using the compass, locate a jungle and visit it. There, you might find the temple."
+			tasks: [
+				{
+					biome: "minecraft:jungle"
+					id: "06CEC95CFBEB5DDD"
+					title: "Find a jungle"
+					type: "biome"
+				}
+				{
+					biome: "minecraft:sparse_jungle"
+					id: "052222A7CC28CDC5"
+					title: "Find a sparse jungle"
+					type: "biome"
+				}
+			]
+			title: "&3&lSearch For A Jungle"
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6595D4D901F98841"]
+			id: "518AB120FE26D948"
+			rewards: [
+				{
+					id: "4FACD6C5B07E0B6F"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5EFFAD463B3A581B"
+					table_id: 7770373541787713970L
+					type: "choice"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "This ancient temple is a deadly place. Beware of traps, enemies and other dangers ..."
+			tasks: [{
+				icon: "unearthed_journey:polished_archstone"
+				id: "1540E7154B1A5507"
+				structure: "unearthed_journey:temple_to_methuselah"
+				title: "Find the temple to methuselah"
+				type: "structure"
+			}]
+			title: "&3&lTemple To Methuselah"
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["518AB120FE26D948"]
+			description: ["To start your unearthed journey, you will have to slay Methuselah to obtain his eye. That can be used to travel to other eras!"]
+			id: "7606EAE37AD59208"
+			rewards: [
+				{
+					id: "16B0D632FFBFAE8C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "18B8357EF311EC13"
+					table_id: 1365136238275176325L
+					type: "random"
+				}
+			]
+			subtitle: "Under their temple, there is a deadly creature waiting for you - Methuselah."
+			tasks: [{
+				entity: "unearthed_journey:methuselah_boss"
+				icon: {
+					Count: 1
+					id: "unearthed_journey:eye_of_methuselah"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "3462280884C76BC4"
+				title: "&3&lSlay Methuselah"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7606EAE37AD59208"]
+			description: [
+				"To start time traveling, you'll have to build portals for every dimension. In the temple itself, you can either find or craft the archstone pillars,"
+				"and you'll have to find the portal corners. You can then build a portal just like you would when visiting the nether, but replace the corners with"
+				"the corner blocks. Do make sure all of the corners match (they have to be the same animal). Then, &3use the eye to light the portals&r and off you go!"
+			]
+			id: "28771DFADADC1306"
+			rewards: [
+				{
+					id: "2D08FC70BA032009"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "06DF0A621A150E10"
+					table_id: 7770373541787713970L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "69521EA220D48EE5"
+					table_id: 1365136238275176325L
+					type: "random"
+				}
+			]
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "You will have to build portals to start your time travel adventure. But for that, you're going to need resources."
+			tasks: [
+				{
+					count: 30L
+					id: "2EDE7B321A8B3F15"
+					item: { Count: 30, id: "unearthed_journey:archstone_pillar" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7A20D92C03AFDC39"
+					item: { Count: 4, id: "unearthed_journey:paleogene_portal_corner" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "11E700170858004C"
+					item: { Count: 4, id: "unearthed_journey:neogene_portal_corner" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5B896BD970A4A4A9"
+					item: { Count: 4, id: "unearthed_journey:pleistocene_portal_corner" }
+					type: "item"
+				}
+			]
+			title: "&3&lObtain Portal Materials"
+			x: 1.5d
+			y: -6.5d
+		}
+	]
+	title: "&b Introduction"
+}

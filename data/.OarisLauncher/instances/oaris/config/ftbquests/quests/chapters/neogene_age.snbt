@@ -1,0 +1,157 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "neogene_age"
+	group: "4AAD00DF5B6AB90F"
+	hide_quest_until_deps_complete: true
+	icon: "unearthed_journey:neogene_portal_corner"
+	id: "56C47F7A51782B9B"
+	images: [{
+		height: 20.0d
+		image: "minecraft:textures/gui/quests/image_neogene.png"
+		rotation: 0.0d
+		width: 35.0d
+		x: 0.0d
+		y: -2.0d
+	}]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["09BC0E6631FF2657"]
+			description: [
+				"The Neogene age is the second geological period. It started around 23 million years ago and ended about 2.3 million years ago."
+				"The earlierst human ancestors appeared in Africa during the Neogene age!"
+			]
+			id: "653656DA1742035E"
+			rewards: [{
+				id: "53F3A2FB3E896EB1"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "octagon"
+			size: 1.8d
+			subtitle: "Enter the neogene age ..."
+			tasks: [{
+				dimension: "unearthed_journey:neogene"
+				icon: "unearthed_journey:neogene_portal_corner"
+				id: "5B7E0B545A85C502"
+				title: "Enter the neogene age"
+				type: "dimension"
+			}]
+			title: "&3&lThe Neogene Age"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["653656DA1742035E"]
+			description: ["Well, not much to explore, but you get the point. "]
+			id: "69A8919BA5B693C7"
+			rewards: [{
+				id: "2D892FC0E10B4BD2"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			subtitle: "Explore the neogene biomes!"
+			tasks: [{
+				biome: "unearthed_journey:pebas_formation"
+				id: "4FF40E12DF0266CC"
+				title: "Visit the pebas formation"
+				type: "biome"
+			}]
+			title: "&3&lNeogene Biomes"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["653656DA1742035E"]
+			description: ["These ancestors of the dolphins live in the neogene rivers. They will attacks boats, other than that though, they're neutral."]
+			id: "1D623A1FD24C0FDA"
+			rewards: [
+				{
+					id: "3787E716C0561F6F"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "396B275ECE20CDE4"
+					table_id: 7770373541787713970L
+					type: "random"
+				}
+			]
+			shape: "diamond"
+			size: 1.2d
+			subtitle: "Why are there dolphins 10 million years ago? In a river?"
+			tasks: [{
+				entity: "unearthed_journey:pebanista"
+				icon: "minecraft:big_dripleaf"
+				id: "330039AF1C8667E4"
+				title: "Kill Pebanistas"
+				type: "kill"
+				value: 10L
+			}]
+			title: "&3&lNeogene Dolphins?"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["653656DA1742035E"]
+			description: ["The Gnatusuchus is a tiny reptile that can be tamed with clams. It can dig up junk for you, yay!"]
+			id: "1A6D5729BE173499"
+			rewards: [{
+				id: "7BE44733F20F02E3"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			subtitle: "The Gnatu-something is a cute little reptile."
+			tasks: [{
+				checkItem: true
+				entity: "unearthed_journey:gnatusuchus"
+				icon: "minecraft:sand"
+				id: "41186BB319F9932C"
+				item: "unearthed_journey:clams_block"
+				nbt: { }
+				title: "Tame a Gnatusuchus"
+				type: "questsadditions:interaction"
+				value: 1L
+			}]
+			title: "&3&lGnatu-Something"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["653656DA1742035E"]
+			description: ["The purussaurus is a deadly caiman, luckily it's extinct nowadays. Be careful though, it will attack you. Can you defeat it?"]
+			id: "53B7DB20CD6AF84B"
+			rewards: [
+				{
+					id: "3371F184AF901DF1"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3863A9B20445073B"
+					table_id: 1365136238275176325L
+					type: "random"
+				}
+			]
+			shape: "diamond"
+			size: 1.2d
+			subtitle: "The mighty purussaurus!"
+			tasks: [{
+				entity: "unearthed_journey:purussaurus_brasiliensis"
+				icon: "unearthed_journey:raw_meat"
+				id: "40B503DFDB88CCB7"
+				title: "Kill a purussaurus"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&3&lPurussaurus Slayer"
+			x: -1.5d
+			y: -1.5d
+		}
+	]
+	title: "&b Neogene Age"
+}

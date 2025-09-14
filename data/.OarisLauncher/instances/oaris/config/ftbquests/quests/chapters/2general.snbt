@@ -1,0 +1,170 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2general"
+	group: "4AAD00DF5B6AB90F"
+	hide_quest_until_deps_complete: true
+	icon: "unearthed_journey:manganese_steel_ingot"
+	id: "484AFBE73E667E4A"
+	images: [{
+		height: 20.0d
+		image: "minecraft:textures/gui/quests/image_general.png"
+		rotation: 0.0d
+		width: 35.0d
+		x: 5.0d
+		y: -3.0d
+	}]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["09BC0E6631FF2657"]
+			description: [
+				"Peat is a fairly useful new resource. It can be found by digging in the dirt in the cenozoic dimensions. You can use it as fuel, but"
+				"that's going to require a couple more steps."
+			]
+			id: "38335F1C6CE002F0"
+			rewards: [{
+				id: "192135AA5E68977B"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			subtitle: "Peat is a useful new resource."
+			tasks: [{
+				count: 4L
+				id: "33FB5A691A40BB9F"
+				item: { Count: 4, id: "unearthed_journey:peat" }
+				type: "item"
+			}]
+			title: "&3&lObtaining Peat"
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["38335F1C6CE002F0"]
+			description: ["It's time to bake! Craft a peat pie from 4 pieces of peat. You will be using this as fuel, but you're not quite ready yet."]
+			id: "11DF3556BF98E24F"
+			rewards: [{
+				id: "326FA96DFC67A9AB"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			subtitle: "Craft a peat pie!"
+			tasks: [{
+				icon: "minecraft:cake"
+				id: "2462ABE5C0AC8120"
+				item: "unearthed_journey:peat_pie"
+				type: "item"
+			}]
+			title: "&3&lOpening A Bakery"
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["11DF3556BF98E24F"]
+			description: ["Place the peat pie you made on the ground. All there's left after that is wait for it to dry."]
+			id: "5D81778E59A73DC8"
+			rewards: [{
+				id: "0E123D7DEAB1F3A4"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			subtitle: "Time to decorate your new bakery! "
+			tasks: [{
+				block: "unearthed_journey:peat_pie"
+				block_type: 0
+				icon: "golden_foods:golden_cake"
+				id: "0092A4345B699F74"
+				replace: false
+				replaced: "minecraft:air"
+				type: "questsadditions:place"
+				value: 1L
+			}]
+			title: "&3&lDecorating The Bakery"
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5D81778E59A73DC8"]
+			description: ["Once the pie has been dried, you can destroy it and pick it up to use it as fuel. It's pretty efficient too - awesome, right?"]
+			id: "5F247FE846CB65F4"
+			rewards: [{
+				id: "2091E10DA2A0CA34"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The last steps of your baking career."
+			tasks: [{
+				id: "53F06A23275B893C"
+				item: "unearthed_journey:dried_peat_pie"
+				type: "item"
+			}]
+			title: "&3&lCooling Down The Cake"
+			x: 6.0d
+			y: -5.25d
+		}
+		{
+			dependencies: ["09BC0E6631FF2657"]
+			description: [
+				"Lead is a new material. It can be found in all cenozoic dimensions. Whilst you cannot make armor or equipment from lead, you can"
+				"use it for decorational purposes. It is surprisingly blast-proof."
+			]
+			id: "110B35EE1990E735"
+			rewards: [{
+				id: "4F944DD1D207FEC8"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "Lead is a new resource found in all of the 3 dimensions."
+			tasks: [{
+				id: "1ED9D56DAA8BA275"
+				item: "unearthed_journey:lead_ingot"
+				type: "item"
+			}]
+			title: "&3&lLead The Way! "
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["110B35EE1990E735"]
+			description: ["These blocks aren't particularly special, but they are more blast proof than their vanilla counterparts."]
+			id: "24E5BDB765B1FF25"
+			min_required_tasks: 1
+			rewards: [
+				{
+					id: "03C95CE8AEEDA1C2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0D72E95816BFCAED"
+					table_id: 1365136238275176325L
+					type: "random"
+				}
+			]
+			subtitle: "Use these blocks to spice up your cenozoic base!"
+			tasks: [
+				{
+					count: 10L
+					id: "001F1A894E8C3B23"
+					item: { Count: 10, id: "unearthed_journey:lead_bars" }
+					type: "item"
+				}
+				{
+					id: "51BC4AF7EE1BDF37"
+					item: "unearthed_journey:blast_door"
+					type: "item"
+				}
+			]
+			title: "&3&lLead-ing Blocks"
+			x: 4.0d
+			y: -4.0d
+		}
+	]
+	title: " &6General"
+}
